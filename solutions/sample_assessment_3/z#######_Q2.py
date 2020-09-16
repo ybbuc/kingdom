@@ -13,5 +13,5 @@ def get_king_name():
 
 easy_peasy()
 user_name = input('Enter your name: ')
-king_name = get_king_name()
+get_king_name()
 print('%s, you can be of good service to King Jakob.' % user_name)
