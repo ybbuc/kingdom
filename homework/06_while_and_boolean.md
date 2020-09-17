@@ -11,4 +11,5 @@ until they enter a `'quit'` value. As they enter each topping, print a message s
 
 ## infinity.py
 Write a loop that never ends, and run it. (To end the loop, press `CTRL-C` or close the window displaying the output.)
+
 ![Buzz Lightyear](buzz_lightyear.gif)
