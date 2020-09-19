@@ -19,4 +19,3 @@ Try the following:
 - Try changing the angle from 59 to something else and run the code to see what happens. Try experimenting with other changes. Can you make an interesting pattern?
 
 ![Turtle art sample](turtle_art_sample.jpg)
-![Rita's Turtle art](turtle_art_rita.jpg)
