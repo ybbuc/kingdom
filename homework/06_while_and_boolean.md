@@ -13,3 +13,7 @@ until they enter a `'quit'` value. As they enter each topping, print a message s
 Write a loop that never ends, and run it. (To end the loop, press `CTRL-C` or close the window displaying the output.)
 
 ![Buzz Lightyear](buzz_lightyear.gif)
+
+## quadratic_while.py
+Refactor the `quadratic_lists.py` file you previously created so that it uses a `while` loop.
+- At the end of each run, ask the user if they want to run it again. If so, run everything again.
