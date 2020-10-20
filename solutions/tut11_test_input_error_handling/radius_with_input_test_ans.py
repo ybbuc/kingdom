@@ -3,16 +3,16 @@ a program to accept user input, test if it is a number,
 and then send if off to calculate the circumference and area of the circle.
 '''
 
-PI=3.14159
+import math
 
 # calculates the circumference of a circle, given the radius
 def calculate_circ(radius):
-    circumf= 2*PI*radius
+    circumf= 2*math.pi*radius
     return circumf
 
 # calculates the area of a circle, given the radius
 def calculate_area(radius):
-    area=PI * radius * radius
+    area= math.pi * radius * radius
     return area
 
 
@@ -32,10 +32,13 @@ print('Calculate the circumference and area of a circle')
 user_input=input('Type in the radius in centimetres: ')
 if isNumber(user_input)==False:
     exit()
+
+# note that this works because user_input is known to be a number
+# if user_input was not a number the code would have stopped running
 radius=float(user_input)
 print('%s is a number' %user_input)
-# print(calculate_circ(radius))
+
+# calculate and print cricumphrence and area of circle
 print('The circumference of the circle is %.4f centimetres.' % calculate_circ(radius))
 print('The area of the circle is %.4f square centimetres.' % calculate_area(radius))
-
 

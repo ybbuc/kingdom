@@ -1,9 +1,6 @@
 # Converts Australian dollars to other currencies
 #
 
-statement="Sydney and Melbourne"
-print(statement.upper())
-print(statement.lower())
 
 currency_name=['Euro', 'US Dollar', 'Singapore Dollar']
 currency_rate=[0.62, 0.71, 0.98]
@@ -20,7 +17,7 @@ def is_number(poss_num):
     return is_num
 
 
-print('Welcome!\n Quick Currency Converter can convert the following currencies.')
+print('Welcome!\nQuick Currency Converter can convert the following currencies.')
 
 for i in range(0,3):
     print('%s. %s (%.2f)' %(str(i+1), currency_name[i], currency_rate[i]))
@@ -31,7 +28,7 @@ if is_number(user_input)==False:
     exit()
 
 cur_num=int(user_input)-1
-if cur_num<0 or cur_num>2:
+if cur_num < 0 or cur_num > 2:
     print('Number out of range')
     exit()
 
