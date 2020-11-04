@@ -51,3 +51,31 @@ STATE             ELECTORAL VOTES   BIDEN VOTES   TRUMP VOTES   PROJECTED
 Note: make sure you maintain data integrity, each state must have their correct votes.
 
 Bonus: At the end, calculate how many electoral votes are projected to go to each presidential candidate.
+
+## Question 4
+
+Write code that asks the user to guess a random number between 1 and 100.
+```
+Guess a number between 1 and 100: 
+```
+The user then types their answer.
+
+Check the user's answer.
+- If the user does not enter a number, give an appropriate error message.
+
+- If the user enters a number, but it is not between 1 and 100, give a different appropriate error message.
+
+- If the user enters a number, but it is not correct, tell them if the correct number is more or less than that.
+
+- If the user enters the correct number, tell them it was correct.
+
+Repeat the quiz until the user guesses a number correctly, or tries to guess 3 random numbers, whichever comes first.
+
+Display the number of guesses and wish them luck next time or congratulate them on their win.
+
+You can use this function to generate a random integer between 1 and 100:
+```python
+import random
+
+random_num = random.randint(1, 100))
+```
