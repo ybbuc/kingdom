@@ -22,7 +22,6 @@ for i in range(len(key_states)-1):
             key_states[i] = key_states[j]
             key_states[j] = temp
 
-
 print('STATE             ELECTORAL VOTES   BIDEN VOTES   TRUMP VOTES   PROJECTED')
 
 trump_electoral = 0
