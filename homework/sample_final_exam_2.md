@@ -12,7 +12,7 @@ Use Turtle to draw the following shapes:
 
 ![Image of turtle task](sample_final_exam_2_turtle.jpg)
 
-The sides of the inner square are 50pt. The sides of the outer square are 250pt.
+The sides of the inner square are 100pt. The sides of the outer square are 250pt.
 
 The distances between the left side of the outer square and the left side of the inner square is 50pt. The distance between the bottoms of the squares is also 50pt.
 
@@ -22,7 +22,7 @@ Use the following code which contains the key states in the United States presid
 
 ```python
 #    ['state name', electoral votes, Biden votes, Trump votes]
-MI = ['Minnesota', 10, 1671129, 1436422]
+MN = ['Minnesota', 10, 1671129, 1436422]
 ME = ['Maine', 4, 327878, 254049]
 FL = ['Florida', 29, 5269926, 5646949]
 OH = ['Ohio', 18, 2576590, 3038247]
@@ -35,7 +35,7 @@ NV = ['Nevada', 6, 553484, 528442]
 MI = ['Michigan', 16, 1956696, 2198132]
 PA = ['Pennsylvania', 20, 2286865, 2964853]
 
-key_states = [MI, ME, FL, OH, TX, NC, GA, WI, AZ, NV, MI, PA]
+key_states = [MN, ME, FL, OH, TX, NC, GA, WI, AZ, NV, MI, PA]
 
 print('STATE             ELECTORAL VOTES   BIDEN VOTES   TRUMP VOTES   PROJECTED')
 ```
@@ -69,7 +69,7 @@ Check the user's answer.
 
 - If the user enters the correct number, tell them it was correct.
 
-Repeat the quiz until the user guesses a number correctly, or tries to guess 3 random numbers, whichever comes first.
+Allow them 5 guesses for each random number. Repeat the quiz until the user guesses a number correctly, or tries to guess 3 random numbers, whichever comes first.
 
 Display the number of guesses and wish them luck next time or congratulate them on their win.
 
