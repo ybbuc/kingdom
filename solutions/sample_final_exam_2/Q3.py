@@ -51,7 +51,7 @@ for s in key_states:
         output += 'tie'
     print(output)
 
-print()  # Just putting in a space
+print()  # Just adding some space to breathe
 
 if biden_electoral > trump_electoral:
     print('It is projected that Biden has %d more electoral votes than Trump.'
