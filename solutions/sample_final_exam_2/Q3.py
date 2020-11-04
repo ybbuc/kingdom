@@ -18,22 +18,10 @@ key_states = [MN, ME, FL, OH, TX, NC, GA, WI, AZ, NV, MI, PA]
 for i in range(len(key_states)-1):
     for j in range(i+1, len(key_states)):
         if key_states[i][1] <= key_states[j][1]:
-            # State name
-            temp = key_states[i][0]
-            key_states[i][0] = key_states[j][0]
-            key_states[j][0] = temp
-            # Electoral votes
-            temp = key_states[i][1]
-            key_states[i][1] = key_states[j][1]
-            key_states[j][1] = temp
-            # Biden votes
-            temp = key_states[i][2]
-            key_states[i][2] = key_states[j][2]
-            key_states[j][2] = temp
-            # Trump votes
-            temp = key_states[i][3]
-            key_states[i][3] = key_states[j][3]
-            key_states[j][3] = temp
+            temp = key_states[i]
+            key_states[i] = key_states[j]
+            key_states[j] = temp
+
 
 print('STATE             ELECTORAL VOTES   BIDEN VOTES   TRUMP VOTES   PROJECTED')
 
