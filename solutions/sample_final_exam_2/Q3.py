@@ -27,26 +27,26 @@ print('STATE             ELECTORAL VOTES   BIDEN VOTES   TRUMP VOTES   PROJECTED
 trump_electoral = 0
 biden_electoral = 0
 
-for s in key_states:
+for state in key_states:
     output = ' '
-    output += s[0]  # State name
+    output += state[0]  # State name
     while len(output) < 19:
         output += ' '
-    output += str(s[1])  # Electoral votes
+    output += str(state[1])  # Electoral votes
     while len(output) < 37:
         output += ' '
-    output += str(s[2])  # Biden votes
+    output += str(state[2])  # Biden votes
     while len(output) < 51:
         output += ' '
-    output += str(s[3])  # Trump votes
+    output += str(state[3])  # Trump votes
     while len(output) < 65:
         output += ' '
-    if s[2] > s[3]:  # Biden is the projected winner
+    if state[2] > state[3]:  # Biden is the projected winner
         output += 'Biden'
-        biden_electoral += s[1]
-    elif s[3] > s[2]:  # Trump is the projected winner
+        biden_electoral += state[1]
+    elif state[3] > state[2]:  # Trump is the projected winner
         output += 'Trump'
-        trump_electoral += s[1]
+        trump_electoral += state[1]
     else:  # Tie in votes
         output += 'tie'
     print(output)

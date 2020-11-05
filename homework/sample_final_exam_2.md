@@ -69,7 +69,7 @@ Check the user's answer.
 
 - If the user enters the correct number, tell them it was correct.
 
-Allow them 5 guesses for each random number. Repeat the quiz until the user guesses a number correctly, or tries to guess 3 random numbers, whichever comes first.
+Repeat the quiz until the user guesses a number correctly, or tries to guesses 5 times, whichever comes first.
 
 Display the number of guesses and wish them luck next time or congratulate them on their win.
 
@@ -77,5 +77,8 @@ You can use this function to generate a random integer between 1 and 100:
 ```python
 import random
 
-random_num = random.randint(1, 100))
+random_num = random.randint(1, 100)
 ```
+
+
+## Question 5
